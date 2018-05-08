@@ -1,0 +1,123 @@
+@import './ReactAppAutocomplete.scss';
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+
+.filter {
+    min-height: 140px;
+    padding: 5px 15px;
+    margin: 0px 15px;
+    border-radius: 0 0 7px 7px;
+    -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 2px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    top: 56px;
+    z-index: 1;
+}
+
+nav.pager {
+    top: 145px;
+    left: 30px;
+}
+
+table.RecordList {
+    margin-top: 220px;
+}
+
+.table.RecordList thead th {
+    text-align: center;
+    padding: 0.25rem;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+table.RecordList td {
+    padding: 0.25rem 0.25rem;
+    font-family: Courier New, Courier, monospace;
+    line-height: 1.75rem;
+}
+
+.nowrap {
+    white-space: nowrap !important;
+}
+
+.highlight {
+    background: rgb(214, 162, 19)
+}
+
+.DateInput {
+    width: 155px !important;
+    padding: 2px !important;
+    background-clip: padding-box !important;
+    border-radius: 0.25rem !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+.loader {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.loader__image {
+    height: 6rem;
+    width: 6rem;
+}
+
+.box-layout {
+    align-items: center;
+    background: url('/images/bg.jpg');
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.box-layout__box {
+    background: fade-out(white, .15);
+    border-radius: 3px;
+    padding: 3.2rem 1.6rem;
+    text-align: center;
+    width: 25rem;
+}
+
+.box-layout__title {
+    margin: 0 0 1.6rem 0;
+    line-height: 1;
+}
+
+.panel {
+    background: rgba(212, 237, 218, 0);
+    transition: all .3s ease-in-out;
+    height: auto;
+    line-height: initial;
+    max-height: 65px;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.panel.open {
+    transition: all .3s ease-in-out;
+    height: auto;
+    max-height: 300px;
+    background: rgba(212, 237, 218, 100);
+    overflow: auto;
+}
